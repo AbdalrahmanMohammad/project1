@@ -1,3 +1,8 @@
+/* Start variables */
+:root{
+    --main-color:#10cab7;
+}
+/* End variables */
 /* Start Global Rules */
 * {
     box-sizing: border-box;
@@ -125,3 +130,32 @@ header .links ul li:not(:last-child) a {
 
 
 /* End Header */
+/* Start landing section  */
+.landing {
+    background-image: url("../images/langding-page.png");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .intro-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.landing .intro-text h1{
+    margin: 0;
+    color:var(--main-color);
+    font-size: 50px;
+}
+.landing .intro-text p{
+    font-size: 19px;
+    line-height: 1.8;
+}
+/* End landing section  */
